@@ -1,0 +1,192 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Caterina}{Dinnocenzo}{Estudiante de ingeniería industrial}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{cate.jpeg}
+\end{center}
+
+\bg{cvgreen}{white}{Sobre mi}\\[0.5em]
+
+{\footnotesize
+\Soy Estudiante de ingeniería industrial. Este año va a ser mi tercer año cursando la carrera. Soy una persona extrovertida  muy dedicada a mis proyectos, me gusta empezar algo y terminarlo nunca dejar cosas a la mitad y considero que estudiar una carrera es un muy lindo proyecto y/o compromiso a largo plazo. Aparte de ser estudiante soy una persona versátil que le gusta hacer muchas cosas. Me encanta pasar tiempo con mi familia los domingos y con mis amigas los fines de semana. Siempre trato de hacer un balance entre lo social, la salud y las responsabilidades. 
+
+\Soy\Soy\Soy
+\bigskip
+
+\bg{cvgreen}{white}{personal} \\[0.5em]
+Caterina Dinnocenzo 20 años
+
+Nacionalidad: Argentina 
+
+2005
+
+\bigskip
+
+\bg{cvgreen}{white}{Habilidades} \\[0.5em]
+
+Manejo de caja registradora ~•~ Atencion al publico  ~•~ Buen manejo de idiomas
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Intereses}\\[0.5em]
+
+\Esqu Esquí alpino y enseñanza
+Actividades al aire libre
+Trail running
+aprendizaje activo
+\bigskip
+
+
+
+\vspace{4em}
+
+\infobubble{\faAt}{cvgreen}{white}{jack@sparrow.org}
+\infobubble{\faTwitter}{cvgreen}{white}{@sparrow}
+\infobubble{\faFacebook}{cvgreen}{white}{Jack Sparrow}
+\infobubble{\faGithub}{cvgreen}{white}{sparrow}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Experiencia laboral}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{Hace mas de un año}{La pasta pascucci}{Cajera y demas tareas}{Mendoza \color{cvred}}{\pascu Atención al cliente en caja y manejo de medios de pago, manteniendo un trato amable y eficiente en momentos de alta demanda. Colaboración en la organización del local, reposición de productos y apoyo general al equipo para asegurar un buen funcionamiento del servicio\pascu\pascu}{blank.png} \\
+    \cvevent{Dic de 2025-Mar de 2026}{Sugar bowl ski resort}{instructora de esquí}{California \color{cvred}}{ \chugar Enseñanza de esquí a principiantes, especialmente niños, adaptando las clases a distintos niveles y ritmos de aprendizaje. Foco en la seguridad, la confianza y el disfrute del proceso, generando un ambiente positivo en la montaña y acompañando el progreso de cada alumno.\chugar}{blank.png}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{GRADUACIONES}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2023}{Sendario completo}{Con honores}{Colegio san nicolas \color{headerblue}}{}{blank.png} \\
+    \cvdegree{ 2023}{First certificate}{ Cambridge}{London \color{headerblue}}{}{blank.png} \\
+   
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{HABILIDADES TECNOLÓGICAS}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{EXCEL} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{AUTOCAD} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{OCTAVE} & \barrule{0.5}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{POWER POINT} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{OVERLEAF} & \barrule{0.1}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Curriculum}
+
+\noindent
+Soy una persona que encara los desafíos cotidianos con una actitud práctica y profesional, buscando siempre resolver las situaciones de manera eficiente. Me adapto con facilidad a entornos nuevos y a cambios, y aprendo rápido cuando se trata de incorporar conocimientos o habilidades.
+
+\vspace{0.5em}
+
+\noindent
+Me destaco por mi responsabilidad y compromiso, y por mi facilidad para relacionarme con otras personas. Me siento cómoda trabajando en equipo, generando un buen clima y comunicándome de forma clara.
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Certificados}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2026 & Intructora nivel 1 de esqui alpino \\
+    2017 & Mejor jugadora de hockey sobre cesped \\
+    2025 & Empleada del mes en la pasta pascucci 
+\end{tabular}
+\bigskip
+
+\section*{Idiomas}
+\begin{tabular}{l | ll}
+\textbf{Español} & C2 & {\phantom{x}\footnotesize Primera lengua} \\
+\textbf{ Ingés} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{ Italiano} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+\textbf{Portugues} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Caterina Dinnocenzo \icon{\faEnvelopeO}{cvgreen}{} GMAIL \icon{\faMapMarker}{cvgreen}{} Mendoza, Argentina \icon{\faPhone}{cvgreen}{} 2612427672\newline\icon{\faAt}{cvgreen}{} \protect\url{dinnocenzocaterina@gmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
